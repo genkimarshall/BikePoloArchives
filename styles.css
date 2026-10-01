@@ -52,8 +52,13 @@ nav a:focus-visible {
   text-decoration: underline;
 }
 
+main {
+  padding-bottom: 3rem;
+}
+
 footer {
-  margin-top: 3rem;
+  align-items: center;
+  line-height: 1.5;
   border-top: 1px solid #a2a9b1;
 }
 
@@ -73,6 +78,7 @@ caption {
   text-align: left;
   padding-bottom: 0.5em;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 caption img {
