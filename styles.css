@@ -1,0 +1,108 @@
+html {
+  background: black;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  min-height: 100vh;
+  background: white;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 1.5em;
+}
+
+header > a {
+  color: #202122;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header > a:hover,
+header > a:focus-visible {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  padding: 0.25em 0;
+}
+
+nav a {
+  color: #202122;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid #a2a9b1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  padding: 1.5rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0 2em;
+  background: #f8f9fa;
+  color: #202122;
+}
+
+caption {
+  text-align: left;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+caption img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+th,
+td {
+  border: 1px solid #a2a9b1;
+  padding: 0.2em 0.4em;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background: #eaecf0;
+}
+
+/* Keep years intact while allowing longer columns to share the remaining space. */
+th:first-child,
+td:first-child {
+  min-width: 4ch;
+  white-space: nowrap;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  min-width: 3ch;
+  overflow-wrap: normal;
+}
